@@ -7,10 +7,11 @@
 
 ## Usage
 
-Minimal usage
+Minimal usage (You have to set a token because the built-in OAuth flow creates a token with the `repo` scope, but this script requires the `delete_repo` scope. You can create such a token at https://github.com/settings/tokens/new?scopes=delete_repo)
 
 ```js
-npx @octoherd/script-delete-repository
+npx @octoherd/script-delete-repository \
+  -T ghp_0123456789abcdefghjklmnopqrstuvwxyzA \
 ```
 
 Pass all options as CLI flags to avoid user prompts
