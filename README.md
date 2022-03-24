@@ -1,25 +1,24 @@
-# script-delete-repository
+# script-archive-repository
 
-> An Octoherd script to delete repositories
+> An Octoherd script to archive repositories
 
-[![@latest](https://img.shields.io/npm/v/@octoherd/script-delete-repository.svg)](https://www.npmjs.com/package/@octoherd/script-delete-repository)
-[![Build Status](https://github.com/octoherd/script-delete-repository/workflows/Test/badge.svg)](https://github.com/octoherd/script-delete-repository/actions?query=workflow%3ATest+branch%3Amain)
+[![@latest](https://img.shields.io/npm/v/@octoherd/script-archive-repository.svg)](https://www.npmjs.com/package/@octoherd/script-archive-repository)
+[![Build Status](https://github.com/octoherd/script-archive-repository/workflows/Test/badge.svg)](https://github.com/octoherd/script-archive-repository/actions?query=workflow%3ATest+branch%3Amain)
 
 ## Usage
 
-Minimal usage (You have to set a token because the built-in OAuth flow creates a token with the `repo` scope, but this script requires the `delete_repo` scope. You can create such a token at https://github.com/settings/tokens/new?scopes=delete_repo)
-
 ```js
-npx @octoherd/script-delete-repository \
+npx @octoherd/script-archive-repository \
   -T ghp_0123456789abcdefghjklmnopqrstuvwxyzA \
 ```
 
 Pass all options as CLI flags to avoid user prompts
 
 ```js
-npx @octoherd/script-delete-repository \
+npx @octoherd/script-archive-repository \
   -T ghp_0123456789abcdefghjklmnopqrstuvwxyzA \
-  -R "octoherd/*"
+  -R "octoherd/Hello-World" \
+  --octoherd-bypass-confirms
 ```
 
 ## Options

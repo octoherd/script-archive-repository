@@ -1,17 +1,17 @@
 {
-  "name": "@octoherd/script-delete-repository",
+  "name": "@octoherd/script-archive-repository",
   "version": "0.0.0-development",
   "type": "module",
   "exports": "./script.js",
   "bin": {
-    "octoherd-script-delete-repository": "./cli.js"
+    "octoherd-script-archive-repository": "./cli.js"
   },
-  "description": "An Octoherd script to delete repositories",
+  "description": "An Octoherd script to archive repositories",
   "scripts": {
     "start": "node cli.js",
     "test": "node script.js"
   },
-  "repository": "https://github.com/octoherd/script-delete-repository",
+  "repository": "https://github.com/octoherd/script-archive-repository",
   "keywords": [
     "octoherd-script"
   ],
